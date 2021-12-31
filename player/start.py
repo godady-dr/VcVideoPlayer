@@ -12,7 +12,7 @@ async def start(client, message):
                 InlineKeyboardButton("❔ Help & Command ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}",
+                InlineKeyboardButton("Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 InlineKeyboardButton("Support 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
             ],
             [
@@ -149,7 +149,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("❔ Help & Command ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}",
+                InlineKeyboardButton("Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 InlineKeyboardButton("Support 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
             ],
             [
