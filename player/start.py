@@ -12,10 +12,6 @@ async def start(client, message):
                 InlineKeyboardButton("❔ Help & Command ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("Support 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
-            ],
-            [
                 InlineKeyboardButton("Dev🧑‍💻", url=f"https://t.me/coder_debojit"),
                 InlineKeyboardButton("Dev Support 📞", url=f"https://t.me/debojit_chat"),
             ],
@@ -151,10 +147,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             [
                 InlineKeyboardButton("Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 InlineKeyboardButton("Support 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
-            ],
-            [
-                InlineKeyboardButton("Dev🧑‍💻", url=f"https://t.me/coder_debojit"),
-                InlineKeyboardButton("Dev Support 📞", url=f"https://t.me/debojit_chat"),
             ],
             [
                InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
