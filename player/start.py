@@ -9,29 +9,29 @@ from pyrogram.errors import MessageNotModified
 async def start(client, message):
    buttons = [
             [
-                InlineKeyboardButton("❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help"),
+                InlineKeyboardButton("❔ Help & Command ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("💥 Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ 📢", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}",
+                InlineKeyboardButton("Support 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
             ],
             [
-                InlineKeyboardButton("🤖 Bᴏᴛ Lɪꜱᴛ", url=f"https://t.me/DeeCodeBots/32"),
-                InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Dev🧑‍💻", url=f"https://t.me/coder_debojit"),
+                InlineKeyboardButton("Dev Support 📞", url=f"https://t.me/debojit_chat"),
             ],
             [
-               InlineKeyboardButton("💞 Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
             ]
    reply_markup = InlineKeyboardMarkup(buttons)
    if message.chat.type == 'private':
       m=await message.reply_photo(
-                                  photo="https://telegra.ph/file/1ca2830c014aa6b8b62e7.jpg", 
+                                  photo="https://telegra.ph/file/b85d375e9e6cb3cb07896.jpg", 
                                   caption=START_TEXT.format(message.from_user.first_name, message.from_user.id),
                                   reply_markup=reply_markup
       )      
    else:
-      await message.reply(f"**👋 Hey VcVideoPlayer is Alive! ✨**")
+      await message.reply(f"**👋 Hey ᴄʀʏᴘᴛᴏɴɪᴛᴇ ʟɪᴠᴇ sᴛʀᴇᴀᴍᴇʀ is Alive! ✨**")
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
@@ -39,11 +39,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("Sᴛʀᴇᴀᴍ", callback_data="stream"),
-                InlineKeyboardButton ("Iɴꜰᴏ Wʜᴏɪꜱ", callback_data="info"),
+                InlineKeyboardButton ("Iɴfo", callback_data="info"),
             ],
             [
                 InlineKeyboardButton("Vɪᴅᴇᴏ Sᴏɴɢ", callback_data="vsong"),
-                InlineKeyboardButton ("Pᴀꜱᴛᴇ", callback_data="paste"),
+                InlineKeyboardButton ("Pᴀsᴛᴇ", callback_data="paste"),
             ],
             [
                InlineKeyboardButton("Tᴇʟᴇ ✮ ɢʀᴀᴘʜ", callback_data="tgph"),
@@ -146,18 +146,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="start":
         buttons = [
             [
-                InlineKeyboardButton("❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help"),
+                InlineKeyboardButton("❔ Help & Command ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("💥 Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ 📢", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}",
+                InlineKeyboardButton("Support 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
             ],
             [
-                InlineKeyboardButton("🤖 Bᴏᴛ Lɪꜱᴛ", url=f"https://t.me/DeeCodeBots/32"),
-                InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Dev🧑‍💻", url=f"https://t.me/coder_debojit"),
+                InlineKeyboardButton("Dev Support 📞", url=f"https://t.me/debojit_chat"),
             ],
             [
-               InlineKeyboardButton("💞 Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
