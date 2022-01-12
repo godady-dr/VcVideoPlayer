@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 admins = {}
 ADMIN = int(os.getenv('ADMIN',1450779437))
-CHANNEL = int(os.getenv('CHANNEL',-1001680925414))
+CHANNEL = int(os.getenv('CHANNEL',-1001451057225))
 API_ID = int(os.getenv("API_ID", "17345948"))
 API_HASH = os.getenv("API_HASH", "ae6edf5c66031300e59ff940a52dfd67")
 BOT_USERNAME = os.getenv("BOT_USERNAME", "teleutils_bot")
